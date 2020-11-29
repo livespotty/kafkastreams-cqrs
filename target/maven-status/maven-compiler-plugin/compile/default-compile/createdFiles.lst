@@ -1,0 +1,4 @@
+work/exampledemo/streaming/ea/kafka/streams/FundingDefunding.class
+work/exampledemo/streaming/ea/kafka/streams/PartPayCollate.class
+work/exampledemo/streaming/ea/kafka/streams/SettleTransProducer.class
+work/exampledemo/streaming/ea/kafka/streams/PaymentTransactionsProducer.class
