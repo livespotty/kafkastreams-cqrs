@@ -1,4 +1,4 @@
-/Users/petermendis/Documents/projects/kafka/projects/ParticipantPaymentCollateral/src/main/java/work/exampledemo/streaming/ea/kafka/streams/FundingDefunding.java
-/Users/petermendis/Documents/projects/kafka/projects/ParticipantPaymentCollateral/src/main/java/work/exampledemo/streaming/ea/kafka/streams/PaymentTransactionsProducer.java
-/Users/petermendis/Documents/projects/kafka/projects/ParticipantPaymentCollateral/src/main/java/work/exampledemo/streaming/ea/kafka/streams/SettleTransProducer.java
-/Users/petermendis/Documents/projects/kafka/projects/ParticipantPaymentCollateral/src/main/java/work/exampledemo/streaming/ea/kafka/streams/PartPayCollate.java
+/Users/petermendis/development/kafka/kafkastreams-cqrs/src/main/java/work/exampledemo/streaming/ea/kafka/streams/PartPayCollate.java
+/Users/petermendis/development/kafka/kafkastreams-cqrs/src/main/java/work/exampledemo/streaming/ea/kafka/streams/SettleTransProducer.java
+/Users/petermendis/development/kafka/kafkastreams-cqrs/src/main/java/work/exampledemo/streaming/ea/kafka/streams/FundingDefunding.java
+/Users/petermendis/development/kafka/kafkastreams-cqrs/src/main/java/work/exampledemo/streaming/ea/kafka/streams/PaymentTransactionsProducer.java

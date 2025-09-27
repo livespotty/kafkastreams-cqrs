@@ -25,23 +25,21 @@ public class SettleTransProducer {
         properties.setProperty(ProducerConfig.RETRIES_CONFIG, "3");
         properties.setProperty(ProducerConfig.LINGER_MS_CONFIG, "1");
         properties.setProperty(ProducerConfig.ENABLE_IDEMPOTENCE_CONFIG, "true"); // ensure we don't push duplicates
-
-        Producer<String, String> producer = new KafkaProducer<>(properties);
-
-        int i = 0;
-        while (true) {
-            System.out.println("Producing settlement records: " + i);
-            try {
-                producer.send(newRandomTransaction("Participant-id-001"));
-                // sleep every 10 seconds, simulating settlement transaction for this participant
-                Thread.sleep(10000);
-
-                i += 1;
-            } catch (InterruptedException e) {
-                break;
+        try (Producer<String, String> producer = new KafkaProducer<>(properties)) {
+            int i = 0;
+            while (true) {
+                System.out.println("Producing settlement records: " + i);
+                try {
+                    producer.send(newRandomTransaction("Participant-id-001"));
+                    // sleep every 10 seconds, simulating settlement transaction for this participant
+                    Thread.sleep(10000);
+                    
+                    i += 1;
+                } catch (InterruptedException e) {
+                    break;
+                }
             }
         }
-        producer.close();
     }
 
     public static ProducerRecord<String, String> newRandomTransaction(String name) {
